@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    height: 500vh;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 20px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000; /* Cor de fundo do header */
+    z-index: 999; /* Para garantir que o header esteja acima do conteúdo */
+}
+
+header i {
+    font-size: 30px;
+    color: #ffffff; /* Cor dos ícones do header */
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: #ffffff; /* Cor dos links do header */
+    text-decoration: none;
+}
+
+.btn-contato button {
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #ff5e00;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* Menu com submenu */
+.drop {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.drop a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop a:hover {
+    background-color: #f1f1f1;
+}
+
+.drop-hover:hover .drop {
+    display: block;
+}
+
+/* Busca personalizada */
+.buscar-box {
+    width: 40px;
+    height: 40px;
+    background-color: #00000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: .5s;
+}
+
+.buscar-box.ativar {
+    width: 400px;
+}
+
+.buscar-box .lupa-buscar,
+.buscar-box .btn-fechar {
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buscar-box .btn-fechar i {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.buscar-box .lupa-buscar i {
+    font-size: 25px;
+}
+
+.buscar-box .input-buscar {
+    position: absolute;
+    left: 80px;
+    width: calc(100% - 120px);
+    height: 100%;
+    line-height: 45px;
+}
+
+.buscar-box .input-buscar input {
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+}
+
+
+/*Personalizar carro*/
+  .personalize-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+}
+
+.car-image {
+    max-width: 70%;
+    height: auto;
+    padding-left: 60px;
+}
+
+.options {
+    max-width: 45%;
+}
+
+.paint-options p {
+    font-weight: bold;
+}
+
+.color-buttons {
+    display: flex;
+}
+
+.color-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.red { background-color: red; }
+.blue { background-color: rgb(0, 119, 255); }
+.green { background-color: rgb(26, 207, 26); }
+.yellow { background-color: rgb(255, 174, 0); }
+.black { background-color: rgb(0, 255, 234); }
+
+.popular-custom-paints p {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.custom-paint-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.custom-paint-button:hover {
+    background-color: #ddd;
+}
