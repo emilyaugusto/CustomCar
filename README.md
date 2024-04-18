@@ -1,4 +1,4 @@
-<img src="https://github.com/emilyaugusto/EstiliAutomobi/raw/main/automobi/assets/img/bannersite.png](https://github.com/emilyaugusto/CustomCar/blob/main/assets/img/bannersite.png" alt="Descrição da imagem">
+<img src="https://github.com/emilyaugusto/CustomCar/blob/main/assets/img/bannersite.png" alt="Descrição da imagem">
 
 # CustomCar: Transformando Carros em Estilo
 
